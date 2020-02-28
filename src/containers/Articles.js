@@ -1,21 +1,25 @@
 import React from 'react';
-import {connect} from 'react-redux';
-import {withRouter} from 'react-router-dom';
-import {Input, Layout} from 'antd';
+import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
+import { Input, Layout } from 'antd';
 
-import {Footer, DataTable} from '../core';
+import { Footer, DataTable } from '../core';
 
-import {searchArticles, getArticles} from '../redux';
+import { searchArticles, getArticles } from '../redux';
 
-const {Header, Content} = Layout;
-const {Search} = Input;
+const { Header, Content } = Layout;
+const { Search } = Input;
 
-const Articles = ({searchArticles, articles, history}) => (
+const Articles = ({ searchArticles, articles, history }) => (
   <Layout>
     <Header>
       <Search
         placeholder="Search Article..."
-        onSearch={value => searchArticles(value)}
+        onSearch={value => {
+          if (value && value !== '') {
+            searchArticles(value);
+          }
+        }}
         enterButton
       />
     </Header>
@@ -36,6 +40,6 @@ const mapStateToProps = state => ({
 export default withRouter(
   connect(
     mapStateToProps,
-    {searchArticles}
+    { searchArticles }
   )(Articles)
 );

@@ -1,21 +1,22 @@
-import React, {Component} from 'react';
-import {connect} from 'react-redux';
-import {withRouter} from 'react-router-dom';
-import {Layout} from 'antd';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { withRouter, } from 'react-router-dom';
+import { Layout, Icon } from 'antd';
 
-import {Loading, Footer} from '../core';
-import {fetchDetails, getDetails} from '../redux';
+
+import { Loading, Footer } from '../core';
+import { fetchDetails, getDetails } from '../redux';
 
 import 'antd/dist/antd.css';
 
-const {Header, Content} = Layout;
+const { Header, Content } = Layout;
 
 class Detail extends Component {
   componentDidMount() {
     const {
       fetchDetails,
       match: {
-        params: {title},
+        params: { title },
       },
     } = this.props;
     fetchDetails(title);
@@ -24,14 +25,16 @@ class Detail extends Component {
     const {
       details,
       match: {
-        params: {pageid},
+        params: { pageid },
       },
     } = this.props;
+    console.log("PROPS::", this.props);
     return (
       <Layout>
         <Header>
           <h2 className="heading">
             {details.data && details.data[pageid] && details.data[pageid].title}
+            <Icon type="arrow-left" style={{ float: 'right' }} onClick={this.props.history.goBack} />
           </h2>
         </Header>
         <Content>
@@ -57,6 +60,6 @@ const mapStateToProps = state => ({
 export default withRouter(
   connect(
     mapStateToProps,
-    {fetchDetails}
+    { fetchDetails }
   )(Detail)
 );
