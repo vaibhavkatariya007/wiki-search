@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/wiki-search/static/css/main.aa052139.chunk.css",
+    "main.js": "/wiki-search/static/js/main.52419b4a.chunk.js",
+    "main.js.map": "/wiki-search/static/js/main.52419b4a.chunk.js.map",
+    "runtime~main.js": "/wiki-search/static/js/runtime~main.4baf23d0.js",
+    "runtime~main.js.map": "/wiki-search/static/js/runtime~main.4baf23d0.js.map",
+    "static/css/2.8c467cd4.chunk.css": "/wiki-search/static/css/2.8c467cd4.chunk.css",
+    "static/js/2.df1f83a4.chunk.js": "/wiki-search/static/js/2.df1f83a4.chunk.js",
+    "static/js/2.df1f83a4.chunk.js.map": "/wiki-search/static/js/2.df1f83a4.chunk.js.map",
+    "static/js/3.0e634867.chunk.js": "/wiki-search/static/js/3.0e634867.chunk.js",
+    "static/js/3.0e634867.chunk.js.map": "/wiki-search/static/js/3.0e634867.chunk.js.map",
+    "static/js/4.af35ba3b.chunk.js": "/wiki-search/static/js/4.af35ba3b.chunk.js",
+    "static/js/4.af35ba3b.chunk.js.map": "/wiki-search/static/js/4.af35ba3b.chunk.js.map",
+    "static/js/5.c1647a78.chunk.js": "/wiki-search/static/js/5.c1647a78.chunk.js",
+    "static/js/5.c1647a78.chunk.js.map": "/wiki-search/static/js/5.c1647a78.chunk.js.map",
+    "index.html": "/wiki-search/index.html",
+    "precache-manifest.e35123d6ddd425bd154eaed6f3894b42.js": "/wiki-search/precache-manifest.e35123d6ddd425bd154eaed6f3894b42.js",
+    "service-worker.js": "/wiki-search/service-worker.js",
+    "static/css/2.8c467cd4.chunk.css.map": "/wiki-search/static/css/2.8c467cd4.chunk.css.map",
+    "static/css/main.aa052139.chunk.css.map": "/wiki-search/static/css/main.aa052139.chunk.css.map"
+  }
+}
