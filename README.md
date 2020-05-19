@@ -2,7 +2,7 @@ This project is bootstrapped with [Create React App], It an for serching wiki ar
 
 ## Visit Link
 
-https://vaibhavkatariya007.github.io/
+https://vaibhavkatariya007.github.io/wiki-search/
 
 ## Available Scripts
 
