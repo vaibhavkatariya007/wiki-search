@@ -13,7 +13,7 @@ import {Articles, Detail} from './containers';
 
 const Root = ({store}) => (
   <Provider store={store}>
-    <Router>
+    <Router basename='/wiki-search'>
       <Suspense fallback={<Loading />}>
         <Switch>
           <Route exact path="/" component={Articles} />
