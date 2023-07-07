@@ -71,7 +71,7 @@
     "pretty-quick": "~1.8.0",
     "react-test-renderer": "^16.9.0",
     "redux-devtools-extension": "^2.13.8",
-    "stylelint": "~9.9.0",
+    "stylelint": "~15.10.1",
     "stylelint-config-standard": "~18.2.0"
   }
 }
